@@ -8,21 +8,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ChronoFlow</h1>
-        <p>"A goal without a plan is just a wish." – Antoine de Saint-Exupéry</p>
+        <h1>⏳ ChronoFlow ⏳</h1>
+        <p>"Small daily improvements are the key to staggering long-term results." – James Clear</p>
       </header>
       <main className="App-main">
         <section className="App-section">
-          <h2>Meet the Crew (aka Users)</h2>
+          <h2>Our dear Users</h2>
           <UsersPage />
         </section>
         <section className="App-section">
-          <h2>Quest Log (aka Tasks)</h2>
+          <h2>Quest list (Our tasks)</h2>
           <TasksPage />
         </section>
       </main>
       <footer className="App-footer">
-        <p>&copy; 2025 TaskMe Pro - Conquering to-dos since tomorrow. 😉</p>
+        <p>&copy; 2025 ChronoFlow - One after another, then repeat. 📃</p>
       </footer>
     </div>
   );
