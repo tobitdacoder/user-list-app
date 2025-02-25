@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>TaskMe Pro</h1>
-        <p>Tame the chaos, one (and a half!) task at a time. Siuuu🚀</p>
+        <h1>ChronoFlow</h1>
+        <p>"A goal without a plan is just a wish." – Antoine de Saint-Exupéry</p>
       </header>
       <main className="App-main">
         <section className="App-section">
