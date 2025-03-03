@@ -4,6 +4,11 @@ from .models import Task
 from .serializers import TaskSerializer
 
 # Provides both GET (list) and POST (create) for tasks
-class TaskListCreateView(generics.ListCreateAPIView):
+class TaskListCreate(generics.ListCreateAPIView):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
+    
+
+class TaskRetrieveUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
