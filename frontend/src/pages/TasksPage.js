@@ -1,6 +1,6 @@
 // src/pages/TasksPage.js
 import React from 'react';
-import { TaskList } from '../components/TaskList/TaskList';
+import { TaskList } from '../components/TaskList/TaskManager';
 import { useTasks } from '../hooks/useTasks';
 
 export const TasksPage = () => {

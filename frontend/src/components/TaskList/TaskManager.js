@@ -32,7 +32,7 @@
 
 
 import React, { useState, useEffect } from "react";
-import { getTasks, addTask, updateTask, deleteTask } from "../api";
+import { getTasks, addTask, updateTask, deleteTask } from "../../api";
 
 const TaskManager = () => {
     const [tasks, setTasks] = useState([]);
@@ -49,9 +49,17 @@ const TaskManager = () => {
 
     const handleAddTask = async () => {
         if (newTask.title.trim()) {
-            await addTask(newTask);
-            setNewTask({ title: "", description: "" });
-            loadTasks();
+
+            try {
+                const addedTask = await addTask(newTask);
+                setTasks([...tasks, addedTask]);
+                setNewTask({ title: "", description: "" }); // Clear the input fields
+            } catch (error) {
+                console.error("Error adding task", error);
+            }
+            // await addTask(newTask);
+            // setNewTask({ title: "", description: "" });
+            // loadTasks();
         }
     };
 
